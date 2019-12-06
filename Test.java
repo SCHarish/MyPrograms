@@ -1,18 +1,13 @@
 import java.io.*;
 class Test{
-	public static void main(String args[])throws FileNotFoundException{
-		File file = new File("/Users/harish-7361/Practise/results.txt");
-		BufferedReader br = new BufferedReader(new FileReader(file));
-
+	enum testing{
+		ROCK,PAPER,SCISSOR
 	}
 
-	void msg()throws Exception{
-		System.out.println("Msg printed");
-	}
-}
-
-class A extends Test{
-	void msg()throws IOException{
-		System.out.println("subclass printed");
+	public static void main(String args[]){
+		testing t1,t2;
+		for(testing t : EnumTest.testing.values()){
+			System.out.println(t.ordinal());
+		}
 	}
 }
