@@ -1,4 +1,11 @@
 import java.io.*;
+
+interface helloworld{
+	default void method1(){
+		System.out.println("Inside the method1");
+	}
+}
+
 class Test{
 	public static void main(String args[])throws FileNotFoundException{
 		File file = new File("/Users/harish-7361/Practise/results.txt");
